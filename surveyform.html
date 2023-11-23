@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css"/>
+    <link href="https://fonts.cdnfonts.com/css/azaro" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sudo-var" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nabla" rel="stylesheet">
+    <title>survey-form</title>
+  </head>
+<body dir="ltr">
+  <!-- CREER VERSION HORS LIGNE AVEC FONT SIZE CORRECTE & FONT FAMILY ADEQUATE -->
+  <header>
+    <p class="author">Nicolas Belrain - Web Dev Student
+    </p>
+    
+    <h1 id="title">survey-form
+    </h1>
+    
+    <div class="contexte-tags">
+      <p class="context">Contexte : Evolutions culturelles et technologiques contemporaines.</p>  
+      <p class="tags">#abstraction #urbanisme #situation #connectivité #échelle #rencontre #alter #ego</p>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- contenant display CSS Grid -->  
+      <form name="survey-form-onboard" method="post" action="">
+        <fieldset class="wrapper-profile-block">
+          
+          <div class="code-bar" title="scan-code">
+            <img src="./assets/img/barcode.webp" alt="code-bar">
+          </div>
+        
+          <div class="serial-number" title="serial-number">
+            <span class="inputs">
+              <label for="serial-number" class="label-SN">SERIAL NUMBER</label>
+              <input type="text" placeholder="12 characters serial-number">
+            </span>
+          </div>  
+        
+          <div class="personal-data" name="coordonnées">
+            <label for="name">
+              <input class="coordonnées" min="0" max="40" placeholder="Full Name" type="text" id="name"></input>
+            </label>
+
+            <label for="DOB">
+              <input class="coordonnées" min="0" max="100" placeholder="DOB" type="text" id="DOB"></input>
+            </label>
+
+            <label for="planet-select" title="planet">
+              <select name="planet" id="planet" class="coordonnées">
+                <option value="option-1">PROVENANCE</option>
+                <option value="option-2">MERCURE</option>                
+                <option value="option-3">VENUS</option>
+                <option value="option-4">TERRE</option>
+                <option value="option-5">MARS</option>
+                <option value="option-6">JUPITER</option>
+                <option value="option-7">SATURNE</option>
+                <option value="option-8">URANUS</option>
+                <option value="option-9">NEPTUNE</option>
+                <option value="option-10">PLUTON</option>
+              </select>
+            </label>
+          </div>
+
+          <div name="avatar-frame" class="avatar" >
+            <label for="avatar-upload" class="avatar-label">
+              <img src="placeholder.png" alt="Avatar" id="avatar-preview">
+              <input type="file" id="avatar-upload" accept="image/*">
+              <span>Choisir une photo</span>
+            </label>
+          </div>
+        </fieldset>
+
+          
+    <!-- cta btns for the voyager -->
+        <fieldset class="terms-submit">
+          <label for="terms-and-conditions">
+            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions"/>I accept the <a href="">terms and conditions.</a></input>
+          </label>
+          
+          <label for="submit">
+            <input class="cta-btn" value="SUBMIT" type="submit" id="submit"></input>
+          </label>
+        </fieldset>
+      </form>
+
+      <div class="remarque">
+        <p class="remarque"><h3>Remarques :</h3>Le questionnaire qui suit n'a pas la prétention de soumettre des questions si pertinentes, il vise plutôt à évoquer des concepts
+          qui gravitent autour des enjeux de communauté et de société. L'objectif étant d'en cerner les limites par la force collective.
+        </p>
+        <br>
+        <br>
+        <label for="button">
+          <input class="cta-btn" type="button" value="OK" id="button"></input>
+        </label>
+      </div>
+
+    <!-- REDUIRE NOMBRE DE QUESTION -->
+    <!-- REEFLECHIR A DE NOUVEAUX INPUTS (expl: type volume)-->
+      <form method="post" action="">
+            
+        <fieldset class="block-questions">
+          <h3>Questions </h3>
+
+          <label for="question" class="questions">A quelle distance vous placez-vous face à l’idée de «droit au bonheur» ?
+            <textarea id="question" ></textarea>
+          </label>
+
+          <label for="question" class="questions">Pourriez-vous determiner à quel point une conversation avec un inconnu participe au phénomène de socialisation ?
+            <textarea id="question"></textarea>
+          </label>
+
+          <label for="question" class="questions">Quels liens établir entre les 2 termes suivants : inconnu/identité ?
+            <textarea id="question"></textarea>
+          </label>
+
+          <label for="question" class="questions">Comment se positionner face à l’idée de «conscience collective» ?
+            <textarea id="question"></textarea>
+          </label>
+
+          <label for="question" class="questions">Sur quelle réflexion vous arrêtez-vous à la fin de ce questionnaire ?
+            <textarea id="question"></textarea>
+          </label>
+
+          <label for="question" class="questions">Parviendriez-vous aujourd'hui à identifier vos méthodes de développement 
+            personnelles pour économiser votre énergie et la force d'investissement qui vous anime au quotidien ?
+          <textarea id="question"></textarea>
+          </label>
+
+          <label for="question" class="questions">Tenez ; Restons sur l'idée d'investissement. Existe-t-il des moyens intellectuels 
+            permettant de servir un investissement quelconque en passant par une sensibilité, de tout ordre ? 
+          <textarea id="question"></textarea>
+          </label>
+        </fieldset>
+            
+        <textarea placeholder="Any comments?"></textarea>
+            
+        <input type="submit" id="submit"></input>
+      </form>
+  </div>
+
+  <div class="container">
+    <div>
+      
+    </div>
+    <div>
+      
+    </div>
+    <div>
+      
+    </div>
+  </div>
+        
+<footer>Tags : metamodernisme - metameme - metagame </footer>
+        
+</html>
+    
+</body>
+</html>

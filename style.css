@@ -1,0 +1,252 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    padding: 15px;
+}
+
+.author{
+    font-family: 'AZARO', sans-serif;
+    text-align: center;
+    font-size: 0.6em;
+    color: rgb(159, 160, 164);
+}
+
+h1{
+    font-family: 'AZARO', sans-serif;
+    text-align: center;
+    font-size: 3.8em;
+    margin: 20px 0px 0px;
+    color: rgb(150, 150, 150);
+}    
+
+.contexte-tags {
+    display: inline;
+    text-align: center;
+    font-family: 'SUDO VAR', sans-serif;
+    color: rgb(134, 134, 131);
+}
+
+/* BODY */
+
+body{
+    font-family: 'sudo var', sans-serif;
+    background-color: rgb(211, 211, 212);
+}
+
+.container{
+    margin: 0 auto;
+    width: 90vh;
+}
+
+/* FORM */
+
+form{
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%; 
+    padding-bottom: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+/* QUESTIONS */
+
+h3, p{
+    margin: 1em auto;
+    text-align: center;
+}
+
+label, h3 {
+    display: block;
+    margin: 1em ;
+}
+
+.questions {
+
+}
+
+/* CSS GRID - ITEMS */
+
+.wrapper-profile-block {
+display: grid;
+    gap: 10px;
+    width: 110%;
+    height: 300px;
+    margin: auto 0;
+    grid-template-areas: 
+        "code-bar id id"
+        "code-bar personal-data avatar";
+    grid-template-rows: 15% 85%;
+    grid-template-columns: 10% 45% 45%;
+    background-color: rgb(203, 203, 203);
+}
+
+.wrapper-profile-block > div{
+    display: grid;
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid;
+    margin: auto 0;
+}
+
+/* ITEM 1 */
+.code-bar {
+    display: grid;
+    grid-area: code-bar;
+    width: 100%;
+    height: 100%;
+}
+
+.code-bar > img{
+    display: block;
+    transform: rotate(90deg);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ITEM 2 */
+
+.serial-number input
+.serial-number label{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.input-sn{
+    width: 20em;
+}
+
+/* ITEM 3 */
+.personal-data {
+    display: grid;
+    grid-area: personal-data;
+}
+
+.personal-data > placeholder{
+    text-align: center;
+}
+
+.coordonnées {
+    border-radius: 5px;
+    height: 3.4em;
+    max-width: 13em;
+}
+
+input, select {
+    width: 100%;
+    background-color: rgb(69, 83, 72);
+}
+
+/* ITEM 4 */
+.avatar {
+    display: grid;
+    grid-area: avatar;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.avatar-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#avatar-preview {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.avatar-label span {
+    margin-top: 10px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* INPUTS PERSONAL DATA */
+.personal-data{
+    display: block;
+    overflow: hidden;
+}
+
+
+input::placeholder, select {
+    font-weight: bold;
+    opacity: 0.5;
+    color: rgba(254, 255, 255, 0.694);
+    text-align: center;
+}
+
+
+/* CTA BTN */
+input[type="checkbox"]{
+
+}
+
+.terms-submit{
+    display: block;
+    margin: 2em auto;
+    width: 100%;
+    text-align: center;
+}
+
+input[type="submit"]{
+    display: block;
+    font-size: 0.7rem;
+    background-color: #bfbfc0;
+    border-color: white;
+    min-width: 100px;
+}
+
+/* PARAGRAPHE DE PRECISIONS */
+.remarque{
+    display: block;
+    text-align: center;
+    margin: 50px;
+}
+
+/* QUESTIONS */
+
+.block-questions{
+    display: block;
+    padding: 5rem 0;
+    border: none;
+}
+
+.block-questions > label, input{
+    text-align: center;
+}
+
+.block-questions, textarea {
+    margin: 20px auto;
+    margin-bottom: 5em;
+    width: 100%;
+    padding-bottom: 2rem;
+    border-radius: 30px;
+}
+
+footer{
+    display: inline-block;
+    text-align: center;
+}
